@@ -7,9 +7,9 @@ router.get("/", (req, res) => {
   res.send("Suppliers Page");
 });
 
-router.get("/:id", (req, res) => {
-  const { id } = req.params;
-  res.send(` get to /suppliers/${id}`);
+router.get("/:name", (req, res) => {
+  const { name } = req.params;
+  res.send(` get to /suppliers/${name}`);
 });
 
 module.exports = router;
