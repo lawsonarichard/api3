@@ -1,8 +1,8 @@
 const express = require("express");
 const server = express();
 
-server.get("/products", (req, res) => {});
-server.get("/clients", (req, res) => {});
-server.get("/suppliers", (req, res) => {});
+server.get("/", (req, res) => {
+  res.send("Welcome to the Home Page");
+});
 
 module.exports = server;
